@@ -1,0 +1,6 @@
+back_end/.env
+front_end/.env
+back_end/myenv/
+back_end/sessions/
+back_end/__pycache__/
+back_end/test_api.http

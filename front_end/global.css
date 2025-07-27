@@ -1,0 +1,10 @@
+.text_link{
+    text-align: center;
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgb(0, 153, 255);
+    color: rgb(0, 153, 255);
+    cursor: pointer;
+}
+.text_link:hover{
+    background-color: aliceblue;
+}

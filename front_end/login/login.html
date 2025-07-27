@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="login-container" id="start_login">
+    <h2>Login</h2>
+    <p> If you want to get API hash and API id, go to <a target="_blank" href="https://my.telegram.org/" > https://my.telegram.org/ </a> and login then API development tools</p>
+    <form>
+      <div class="form-group">
+        <label for="api_id">Enter API id</label>
+        <input type="number" id="api_id" name="api_id" required />
+      </div>
+      <div class="form-group">
+        <label for="api_hash">Enter API hash</label>
+        <input type="text" id="api_hash" name="api_hash" required />
+      </div>
+      <div class="form-group">
+        <label for="phone">Enter phone number</label>
+        <input type="text" id="phone" name="phone" required />
+      </div>
+      <div class="form-group checkbox-group">
+        <input type="checkbox" checked id="remember" name="remember" />
+        <label for="remember">Remember credentials</label>
+      </div>
+
+      <button type="button" class="login-button" id="send_code">Send code</button>
+    </form>
+  </div>
+  <div class="login-container" id="confirm_code">
+    <h2>Confirm code</h2>
+    <p>OTP Code is the code sent to you in telegram messages, password if you have password for your telegram </p>
+    
+    <form>
+      <div class="form-group">
+        <label for="code">OTP Code</label>
+        <input type="number" id="code" name="code" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Telegram password</label>
+        <input type="password" id="password" name="password"  />
+      </div>
+      <button type="button" class="login-button" id="login">Login</button>
+      <a class="text_link" id="start_login_again"> Start login again</a>
+    </form>
+  </div>
+  
+</body>
+
+<script src="../global.js" > </script>
+<script src="login.js" > </script>
+</html>
